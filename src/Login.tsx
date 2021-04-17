@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -70,7 +70,7 @@ export default function SignIn() {
   const[passwordError, setPasswordError] = useState(false)
   const[message,setMessage] = useState("");
   const[loading, setLoading] = useState(false);
-  let history = useHistory();
+  //let history = useHistory();
 const handleChange = (e:any) => {
     const value = e.target.value;
     if(e.target.name === "username"){
